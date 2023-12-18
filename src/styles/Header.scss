@@ -1,0 +1,22 @@
+.header{
+    
+    nav{
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        // img{
+            
+        // }
+    }
+    ul{
+        display: flex;
+        color: #FF6060;
+        list-style: none;
+        
+        li{
+            margin-right: 50px;
+        }
+    }
+}

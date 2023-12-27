@@ -1,0 +1,28 @@
+$maincolor : #FF6060;
+
+.Errorpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        color: $maincolor;
+        font-weight:700;
+        font-size: 290px;
+        margin: auto;
+    }
+
+    span{
+        color: $maincolor;
+        font-weight: 500;
+        font-size: 36px;
+        margin: 50px 0 50px 0;
+    }
+
+    .homereturn{
+        margin: 0;
+        color: $maincolor;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}

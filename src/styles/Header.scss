@@ -1,23 +1,21 @@
 .header{
     
     nav{
-        margin: auto;
+       margin-top: 30px;
         display: flex;
         justify-content: space-between;
         width: 100%;
 
 
-        // img{
-            
-        // }
+        img{
+            width: 15%;
+            margin-left: 50px;
+        }
     }
     ul{
         display: flex;
         color: #FF6060;
         list-style: none;
-        
-        li{
-            margin-right: 50px;
-        }
+        margin-right: 30px;
     }
 }

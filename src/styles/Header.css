@@ -1,14 +1,16 @@
 .header nav {
-  margin: auto;
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+.header nav img {
+  width: 15%;
+  margin-left: 50px;
 }
 .header ul {
   display: flex;
   color: #FF6060;
   list-style: none;
-}
-.header ul li {
-  margin-right: 50px;
+  margin-right: 30px;
 }/*# sourceMappingURL=Header.css.map */

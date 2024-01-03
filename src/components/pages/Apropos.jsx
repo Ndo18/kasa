@@ -1,9 +1,11 @@
+import Textapropos from "../Textapropos"
+
 function Apropos() {
     return (
         <div>
-            <h1>Questionnaire 🧮</h1>
+        <img src="/imagesource2.png" alt="img apropos" />
+        <Textapropos />
         </div>
     )
 }
-
 export default Apropos

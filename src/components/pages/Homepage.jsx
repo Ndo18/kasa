@@ -1,10 +1,13 @@
-import Freelanceex from "./Freelanceex"
+// import Freelanceex from "./Freelanceex"
+import ImgAccueil from "../ImgAccueil"
+import Logements from "../Logements"
 
 function Homepage() {
     return (
         <div>
-            <h1>Accueil 🧮</h1>
-            <Freelanceex />
+            <ImgAccueil />
+            <Logements />
+            {/* <Freelanceex /> */}
         </div>
     )
 }

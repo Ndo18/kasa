@@ -7,7 +7,7 @@ function Textapropos (){
         <div className="boxdescription">
             {
                 DescriptionsApropos.map(description => 
-                    <Collapse
+                    <Collapse key = {description.id}
                        id = {description.id}
                        titre = {description.titre}
                        description = {description.description}

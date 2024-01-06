@@ -1,15 +1,12 @@
-// import Freelanceex from "./Freelanceex"
-import ImgAccueil from "../ImgAccueil"
-import Logements from "../Logements"
+import Banner from "../Banner"
+import LogementsContainer from "../LogementsContainer"
 
 function Homepage() {
     return (
         <div>
-            <ImgAccueil />
-            <Logements />
-            {/* <Freelanceex /> */}
+            <Banner />
+            <LogementsContainer />
         </div>
     )
 }
-
 export default Homepage

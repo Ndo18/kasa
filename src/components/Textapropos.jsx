@@ -1,19 +1,20 @@
 import DescriptionsApropos from "../Data/textapropos.json"
+import Collapse from "./Collapse"
 
-function MesDescriptions (){
+function Textapropos (){
+    
     return (
         <div className="boxdescription">
             {
-                DescriptionsApropos.map(description => {
-                    return (
-                        <div className="listedescription" key={description.id}>
-                            <h3>{description.titre}</h3>
-                            <p>{description.description}</p>
-                        </div>
-                    )
-                })
+                DescriptionsApropos.map(description => 
+                    <Collapse
+                       id = {description.id}
+                       titre = {description.titre}
+                       description = {description.description}
+                    />
+                )
             }
         </div>
     )
 }
-export default MesDescriptions
+export default Textapropos

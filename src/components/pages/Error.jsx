@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 
-
 function Error() {
     return (
         <div className='Errorpage'>
@@ -10,5 +9,4 @@ function Error() {
         </div>
     )
 }
- 
 export default Error

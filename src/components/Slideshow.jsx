@@ -1,9 +1,8 @@
-// import NosLogements from '../Data/logements.json'
-
-function Slideshow () {
+function Slideshow ({pictures}) {
+console.log(pictures);
     return (
         <div>
-            Diapo
+            <img src={pictures} alt="test" />
         </div>
     )
 }

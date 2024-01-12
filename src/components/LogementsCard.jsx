@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import "./stylesComponents/LogementsContainer.css"
+import "./stylesComponents/LogementsCard.css"
 
 function LogementsCard({id, titre, cover}) {
 
@@ -7,7 +7,7 @@ function LogementsCard({id, titre, cover}) {
         <div className="logementcard" key={ id }>
             <Link className="logementlink" to={`/Fiche-logement/${id}`} state={{logementid : id}}>
                 <img src={ cover } alt="" />
-                <span>{ titre }</span>
+                <span><p>{ titre }</p></span>
             </Link>
         </div>
     )

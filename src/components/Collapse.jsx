@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './stylesComponents/Collapse.css'
 
 function Collapse ({id, titre, description}) {
     

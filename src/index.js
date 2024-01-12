@@ -10,6 +10,7 @@ import FicheLogements from './components/FicheLogements'
 import './styles/Header.css'
 import './styles/Error.css'
 import './styles/Footer.css'
+import './styles/index.css'
 
 ReactDOM.render(
   <React.StrictMode>

@@ -38,7 +38,10 @@ function FicheLogements() {
       titre="Description"
       description={logement.description}/>
 
-      {/* Ajouter la description + équipements */}
+      <Collapse key={logement.equipements} 
+      titre="Équipements"
+      description={logement.equipments}/>
+      {/* Ajouter équipements */}
 
       </div>
       

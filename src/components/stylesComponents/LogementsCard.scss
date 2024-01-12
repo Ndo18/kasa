@@ -1,0 +1,35 @@
+.logementcard{
+width: 30%;
+display: flex;
+margin-bottom: 45px;
+position: relative;
+
+
+.logementlink{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    width: 100%;
+
+    img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    span{
+        position: absolute;
+        bottom: 0;
+        color: white;
+        background-image: linear-gradient(0deg, #FF6060, #FF6060, #FF6060, #833131, transparent);
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        height: 50px;
+        
+        p{
+            margin: auto;
+            padding: 10px;
+        }
+    }
+}
+}

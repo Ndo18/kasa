@@ -1,3 +1,26 @@
-.banner h2 {
-  color: red;
+.banner-commun {
+  margin: 50px 20px 0 20px;
+  height: 220px;
+  color: white;
+}
+
+.banner1 {
+  background: url("../assets/Background.png"), url("../assets/imgsource1.png");
+  background-size: cover;
+  border-radius: 25px;
+  background-position: center;
+}
+.banner1 h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+}
+
+.banner2 {
+  background: url("../assets/Background.png"), url("../assets/imagesource2.png");
+  background-size: cover;
+  border-radius: 25px;
+  background-position: center;
 }/*# sourceMappingURL=Banner.css.map */

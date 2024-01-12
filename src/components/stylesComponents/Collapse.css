@@ -1,0 +1,12 @@
+.listedescription {
+  cursor: pointer;
+}
+.listedescription h3 {
+  background-color: #FF6060;
+  color: white;
+  width: 100%;
+}
+.listedescription p {
+  color: #FF6060;
+  background-color: #F6F6F6;
+}/*# sourceMappingURL=Collapse.css.map */

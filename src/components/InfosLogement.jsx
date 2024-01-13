@@ -1,12 +1,13 @@
+import './stylesComponents/InfosLogement.css'
+
 function InfosLogement (props) {
     return (
         <section>
-            <div className="titlelocation">
+            <div className="infoslogement">
                 <h2>{props.titre}</h2>
                 <p>{props.location}</p>
-                <span>{props.tags}</span>
+                <div className='tags'>{props.tags}</div>
             </div>
-        <div className="tags"></div>
         </section>
     )
 }

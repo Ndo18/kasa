@@ -27,24 +27,28 @@ function FicheLogements() {
         <InfosLogement key = {logement.id} 
         titre = {logement.title} 
         location = {logement.location}
-        tags = {logement.tags} />
+        tags = {<>
+          {logement.tags.map((tag, index) => (
+            <p key={index}>{tag}</p>
+          ))}
+        </>} />
       
         <InfosHost key = {logement.host.name}
         photoprofil = {logement.host.picture} 
         name = {logement.host.name}
         rating = {logement.rating}/>
       
-      <Collapse key={logement.description} 
-      titre="Description"
-      description={logement.description}/>
+        <Collapse key={logement.description} 
+        titre="Description"
+        description={logement.description}/>
 
-      <Collapse key={logement.equipements} 
-      titre="Équipements"
-      description={logement.equipments}/>
-      {/* Ajouter équipements */}
-
+        <Collapse key={logement.equipements} titre="Équipements"
+        description = {<ul>
+          {logement.equipments.map((equipment, index) => (
+            <li key={index}>{equipment}</li>
+          ))}
+        </ul>}/>
       </div>
-      
       ))}
     </div>
   );

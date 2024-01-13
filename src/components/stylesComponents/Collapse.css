@@ -1,12 +1,19 @@
 .listedescription {
-  cursor: pointer;
+  margin: 0px 20px 0px 20px;
 }
 .listedescription h3 {
+  margin-bottom: 0;
   background-color: #FF6060;
+  border-radius: 10px;
   color: white;
   width: 100%;
+  cursor: pointer;
 }
-.listedescription span {
+.listedescription .descriptiontext {
   color: #FF6060;
   background-color: #F6F6F6;
+  padding: 10px;
+}
+.listedescription .descriptiontext p {
+  margin: 0;
 }/*# sourceMappingURL=Collapse.css.map */

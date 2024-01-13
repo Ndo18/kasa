@@ -10,7 +10,9 @@ const [isOpen, setisOpen] = useState(false)
         <h3 onClick={() => setisOpen(!isOpen)}>
         {titre}
         </h3>
-        { isOpen && <span>{description}</span> }
+        <div className="descriptiontext">
+        { isOpen && <p>{description}</p> }
+        </div>
     </div>
     )
 }

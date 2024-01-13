@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Noslogements from '../Data/logements.json'
 import { useParams } from 'react-router-dom'
 import InfosLogement from './InfosLogement'
-import InfosHost from './InfosHost'
+import TagsRates from './TagsRates'
 import Slideshow from './Slideshow'
 import Collapse from './Collapse'
 
@@ -27,15 +27,16 @@ function FicheLogements() {
         <InfosLogement key = {logement.id} 
         titre = {logement.title} 
         location = {logement.location}
+        photoprofil = {logement.host.picture} 
+        name = {logement.host.name}
+        />
+      
+        <TagsRates key = {logement.host.name}
         tags = {<>
           {logement.tags.map((tag, index) => (
             <p key={index}>{tag}</p>
           ))}
-        </>} />
-      
-        <InfosHost key = {logement.host.name}
-        photoprofil = {logement.host.picture} 
-        name = {logement.host.name}
+        </>}
         rating = {logement.rating}/>
       
         <Collapse key={logement.description} 

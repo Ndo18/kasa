@@ -1,0 +1,19 @@
+.tagsrates {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px 0px 20px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.tags p {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: #FF6060;
+  padding: 2px 30px 2px 30px;
+  border-radius: 50px;
+}/*# sourceMappingURL=TagsRates.css.map */

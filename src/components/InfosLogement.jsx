@@ -6,7 +6,10 @@ function InfosLogement (props) {
             <div className="infoslogement">
                 <h2>{props.titre}</h2>
                 <p>{props.location}</p>
-                <div className='tags'>{props.tags}</div>
+            </div>
+            <div className="infohost">
+                <div>{props.name}</div>
+                <img src = {props.photoprofil} alt="Profile Face" />
             </div>
         </section>
     )

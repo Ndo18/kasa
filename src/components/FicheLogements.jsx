@@ -39,6 +39,7 @@ function FicheLogements() {
         </>}
         rating = {logement.rating}/>
       
+      <section className='collapseinfoslogement'>
         <Collapse key={logement.description} 
         titre="Description"
         description={logement.description}/>
@@ -49,6 +50,7 @@ function FicheLogements() {
             <li key={index}>{equipment}</li>
           ))}
         </ul>}/>
+        </section>
       </div>
       ))}
     </div>

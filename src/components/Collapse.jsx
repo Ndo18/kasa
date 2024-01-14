@@ -6,14 +6,14 @@ function Collapse ({id, titre, description}) {
 const [isOpen, setisOpen] = useState(false)
     
     return (
-    <div className="listedescription" key={id}>
-        <h3 onClick={() => setisOpen(!isOpen)}>
-        {titre}
-        </h3>
-        <div className="descriptiontext">
-        { isOpen && <p>{description}</p> }
+        <div className="monBlock monBlockapropos">
+            <div className="listedescription listapropos" key={id}>
+                <h3 onClick={() => setisOpen(!isOpen)}>
+                {titre}
+                </h3>
+            </div>
+        { isOpen && <div className="descriptiontext"><span>{description}</span></div> }
         </div>
-    </div>
     )
 }
 export default Collapse 

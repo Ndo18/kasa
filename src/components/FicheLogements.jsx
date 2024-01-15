@@ -17,6 +17,8 @@ function FicheLogements() {
    
   }, [id])
 
+  const ratingstars = [1, 2, 3, 4, 5]
+
   return (
     <div>
       {logementsfilter.map(logement => (
@@ -37,7 +39,9 @@ function FicheLogements() {
             <p key={index}>{tag}</p>
           ))}
         </>}
-        rating = {logement.rating}/>
+        rating = {ratingstars.map((num) => (
+            <i key={num} className={logement.rating >= num ? "fa-solid fa-star colorate" : "fa-solid fa-star"}></i>
+        ))}/>
       
       <section className='collapseinfoslogement'>
         <Collapse key={logement.description} 

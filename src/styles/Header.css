@@ -10,7 +10,17 @@
 }
 .header ul {
   display: flex;
-  color: #FF6060;
+  gap: 20px;
   list-style: none;
-  margin-right: 30px;
+  margin-right: 50px;
+}
+.header a {
+  text-decoration: none;
+  color: #FF6060;
+}
+.header a.active {
+  text-decoration: underline;
+}
+.header a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=Header.css.map */

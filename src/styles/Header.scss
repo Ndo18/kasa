@@ -1,12 +1,11 @@
 .header{
     
     nav{
-       margin-top: 30px;
+        margin-top: 30px;
         display: flex;
         justify-content: space-between;
         width: 100%;
-
-
+        
         img{
             width: 15%;
             margin-left: 50px;
@@ -14,8 +13,22 @@
     }
     ul{
         display: flex;
-        color: #FF6060;
+        gap: 20px;
         list-style: none;
-        margin-right: 30px;
+        margin-right: 50px;
+        
+        
+    }
+    a{
+        text-decoration: none;
+        color: #FF6060;
+
+        &.active{
+            text-decoration: underline;
+        }
+        
+        &:hover{
+            text-decoration: underline;
+        }
     }
 }

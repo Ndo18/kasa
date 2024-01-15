@@ -1,23 +1,13 @@
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
+import { NavLink } from 'react-router-dom'
 
-const StyledLink = styled(Link)`
-padding: 15px;
-color: #FF6060;
-text-decoration: none;
-font-size: 24px;
-${(props) =>
-    props.$isFullLink &&
-    `color: white; border-radius: 30px; background-color: #5843E4;`}
-    `
-    
-    function Header() {
+
+ function Header() {
         return (<div className="header">
         <nav>
         <img src="/logokasa.png" alt='Logo Kasa' className='logokasa' />
         <ul>
-        <li><StyledLink to="/">Accueil</StyledLink></li>
-        <li><StyledLink to="/Apropos">À propos</StyledLink></li>
+        <li><NavLink to="/">Accueil</NavLink></li>
+        <li><NavLink to="/Apropos">À propos</NavLink></li>
         </ul>
         </nav>
         </div>

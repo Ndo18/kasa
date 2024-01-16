@@ -11,14 +11,14 @@
             margin-left: 50px;
         }
     }
+
     ul{
         display: flex;
         gap: 20px;
         list-style: none;
         margin-right: 50px;
-        
-        
     }
+
     a{
         text-decoration: none;
         color: #FF6060;
@@ -31,4 +31,28 @@
             text-decoration: underline;
         }
     }
+}
+
+// MEDIA QUERIES //
+
+@media (max-width : 768px) {
+    .header{
+
+        nav{
+            align-items: center;
+            margin-top: 20px;
+
+            img{
+                margin: 0 0 0 20px;
+                width: 30%;
+            }
+        }
+
+        ul{
+            margin: 0 20px 0 0;
+            text-transform: uppercase;
+            font-size: small;
+        }
+    }
+    
 }

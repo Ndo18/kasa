@@ -9,15 +9,20 @@
         width: 100%;
         border-radius: 5px;
         height: 40px;
-        
+        cursor: pointer;
         
         h3{
             margin-left: 20px;
             color: white;
             width: 100%;
-            cursor: pointer;
         }
-        
+
+        .fa-chevron-up{
+            color: white;
+            margin-right: 20px;
+            font-size: 25px;  
+            
+        } 
     }
     
     .descriptiontext{
@@ -30,5 +35,33 @@
             margin: 0;
             list-style-type: none;
         }
+    }
+
+    //ANIMATION CHEVRONS
+
+    @keyframes openRotate {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+
+    @keyframes closeRotate {
+        0%{
+            transform: rotate(180deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+
+    .opened i{
+        animation: openRotate 0.5s ease forwards;
+    }
+    
+    .closed i{
+        animation: closeRotate 0.5s ease forwards;
     }
 }

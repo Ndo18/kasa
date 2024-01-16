@@ -4,4 +4,10 @@
 .boxdescription .monBlockapropos {
   margin-bottom: 30px;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .boxdescription {
+    margin: 20px;
+  }
 }/*# sourceMappingURL=Apropos.css.map */

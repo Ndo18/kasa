@@ -6,3 +6,11 @@
         width: 100%;
     }   
 }
+
+// MEDIA QUERIES //
+
+@media (max-width : 768px){
+    .boxdescription{
+        margin: 20px;
+    }
+}

@@ -17,6 +17,10 @@ $maincolor : #FF6060;
         font-weight: 500;
         font-size: 36px;
         margin: 50px 0 50px 0;
+
+        br{
+            display: none;
+        }
     }
 
     .homereturn{
@@ -24,5 +28,30 @@ $maincolor : #FF6060;
         color: $maincolor;
         font-weight: 500;
         font-size: 18px;
+    }
+}
+
+// MEDIA QUERIES //
+
+@media (max-width : 768px){
+    .Errorpage{
+        display: flex;
+        margin: 20px;
+
+        h1{
+            margin: 50px;
+            text-align: center;
+            width: 100%;
+            font-size: 100px;
+        }
+
+        span{
+            text-align: center;
+            font-size: 18px;
+
+            br{
+                display: block;
+            }
+        }
     }
 }

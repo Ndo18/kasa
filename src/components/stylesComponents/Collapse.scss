@@ -16,7 +16,7 @@
             color: white;
             width: 100%;
         }
-
+        
         .fa-chevron-up{
             color: white;
             margin-right: 20px;
@@ -36,9 +36,9 @@
             list-style-type: none;
         }
     }
-
+    
     //ANIMATION CHEVRONS
-
+    
     @keyframes openRotate {
         0%{
             transform: rotate(0deg);
@@ -47,7 +47,7 @@
             transform: rotate(180deg);
         }
     }
-
+    
     @keyframes closeRotate {
         0%{
             transform: rotate(180deg);
@@ -56,12 +56,27 @@
             transform: rotate(0deg);
         }
     }
-
+    
     .opened i{
         animation: openRotate 0.5s ease forwards;
     }
     
     .closed i{
         animation: closeRotate 0.5s ease forwards;
+    }
+}
+
+//MEDIA QUERIES //
+
+@media(max-width : 768px) {
+    .collapseinfoslogement{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0 40px 0;
+        
+        .monBlock{
+            width: 100%;
+            margin: 10px 0 20px 0;
+        }
     }
 }

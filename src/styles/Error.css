@@ -31,7 +31,7 @@
     margin: 20px;
   }
   .Errorpage h1 {
-    margin: 50px;
+    margin: 80px 0 80px 0;
     text-align: center;
     width: 100%;
     font-size: 100px;
@@ -39,8 +39,5 @@
   .Errorpage span {
     text-align: center;
     font-size: 18px;
-  }
-  .Errorpage span br {
-    display: block;
   }
 }/*# sourceMappingURL=Error.css.map */

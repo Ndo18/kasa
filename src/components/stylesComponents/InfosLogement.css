@@ -27,4 +27,21 @@ section {
   bottom: 30%;
   margin-right: 10px;
   color: #FF6060;
+  text-align: end;
+}
+
+@media (max-width: 768px) {
+  .infoslogement {
+    width: 100%;
+  }
+  .infoslogement h2 {
+    font-size: 20px;
+  }
+  .infoslogement p {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  .infohost {
+    display: none;
+  }
 }/*# sourceMappingURL=InfosLogement.css.map */

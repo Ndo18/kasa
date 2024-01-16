@@ -41,7 +41,10 @@ function FicheLogements() {
         </>}
         rating = {ratingstars.map((num) => (
             <i key={num} className={logement.rating >= num ? "fa-solid fa-star colorate" : "fa-solid fa-star"}></i>
-        ))}/>
+        ))}
+        hostname = {logement.host.name}
+        hostpicture = {logement.host.picture}
+        />
       
       <section className='collapseinfoslogement'>
         <Collapse key={logement.description} 

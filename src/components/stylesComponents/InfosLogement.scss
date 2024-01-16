@@ -29,5 +29,27 @@ position: relative;
         bottom: 30%;
         margin-right: 10px;
         color: #FF6060;
+        text-align: end;
+    }
+}
+
+//MEDIA QUERIES //
+
+@media(max-width : 768px) {
+    .infoslogement{
+        width: 100%;
+
+        h2{
+            font-size: 20px;
+        }
+
+        p{
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    }
+
+    .infohost{
+        display: none;
     }
 }

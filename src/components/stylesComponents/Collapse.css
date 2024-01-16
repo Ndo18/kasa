@@ -52,4 +52,16 @@
 }
 .monBlock .closed i {
   animation: closeRotate 0.5s ease forwards;
+}
+
+@media (max-width: 768px) {
+  .collapseinfoslogement {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0 40px 0;
+  }
+  .collapseinfoslogement .monBlock {
+    width: 100%;
+    margin: 10px 0 20px 0;
+  }
 }/*# sourceMappingURL=Collapse.css.map */

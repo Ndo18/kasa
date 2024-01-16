@@ -16,14 +16,64 @@
             color: white;
             background-color: #FF6060;
             padding: 2px 30px 2px 30px;
-            border-radius: 50px;
+            border-radius: 5px;
         }
     }
     
     .fa-star{
         color: #E3E3E3;
     }
-
+    
     .colorate{
         color: #FF6060;
+    }
+    
+    .onlymobileprofil{
+        display: none;
+    }
+    
+    
+    //MEDIA QUERIES//
+    
+    @media(max-width : 768px) {
+        .tagsrates{
+            flex-direction: column;
+            
+            .infohost{
+                display: block;
+            }
+            
+            .tags{
+                
+                margin: 10px 0 10px 0;
+                p{
+                    font-size: 10px;
+                    align-items: center;
+                    padding: 3px 10px 3px 10px;
+                }
+            }
+            
+            .ratestars{
+                display: flex;
+                flex-direction: row;
+                align-content: space-between;
+                margin: 5px 0 20px 0;
+                
+                .onlymobileprofil{
+                    display: flex;
+                    
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                    }
+                    
+                    div{
+                        margin: 0px 0 0 46px;
+                        text-align: right;
+                        color: #FF6060;
+                    }
+                }
+            }
+        }
     }

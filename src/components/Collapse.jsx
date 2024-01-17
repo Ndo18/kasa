@@ -14,7 +14,7 @@ const iconOpen = isOpen ? 'opened' : 'closed'
                 {titre}
                 </h3>
                 <div>
-                <i class="fa-solid fa-chevron-up"></i>
+                <i className="fa-solid fa-chevron-up"></i>
                 </div>
             </div>
         { isOpen && <div className="descriptiontext"><span>{description}</span></div> }

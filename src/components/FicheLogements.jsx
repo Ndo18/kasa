@@ -5,6 +5,7 @@ import InfosLogement from './InfosLogement'
 import TagsRates from './TagsRates'
 import Slideshow from './Slideshow'
 import Collapse from './Collapse'
+import Error from '../components/pages/Error'
 
 function FicheLogements() {
   const { id } = useParams()
@@ -19,10 +20,14 @@ function FicheLogements() {
 
   const ratingstars = [1, 2, 3, 4, 5]
 
+  if(logementsfilter.length === 0) {
+    return <Error/>
+  }
+
   return (
     <div>
       {logementsfilter.map(logement => (
-      <div>
+      <div key={logement.id}>
         <Slideshow key={logement.pictures}
         pictures = {logement.pictures}/>
 
@@ -51,7 +56,7 @@ function FicheLogements() {
         titre="Description"
         description={logement.description}/>
 
-        <Collapse key={logement.equipements} titre="Équipements"
+        <Collapse key={logement.equipments} titre="Équipements"
         description = {<ul>
           {logement.equipments.map((equipment, index) => (
             <li key={index}>{equipment}</li>

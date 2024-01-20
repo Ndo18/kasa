@@ -55,7 +55,17 @@
     }
 
     .btn_diapo{
-        display: none;
+        .arrow_prev{
+            width: 30px;
+            position: absolute;
+            top: 45%;
+        }
+
+        .arrow_next{
+            width: 30px;
+            position: absolute;
+            top: 44%;
+        }
     }
 
     .compteur{

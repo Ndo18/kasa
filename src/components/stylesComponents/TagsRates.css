@@ -53,6 +53,7 @@
   }
   .tagsrates .ratestars .onlymobileprofil {
     display: flex;
+    margin-left: auto;
   }
   .tagsrates .ratestars .onlymobileprofil img {
     width: 50px;
@@ -60,7 +61,7 @@
     border-radius: 50%;
   }
   .tagsrates .ratestars .onlymobileprofil div {
-    margin: 0px 0 0 46px;
+    margin: 0px 10px 0 46px;
     text-align: right;
     color: #FF6060;
   }

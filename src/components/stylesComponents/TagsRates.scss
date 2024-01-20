@@ -61,6 +61,8 @@
                 
                 .onlymobileprofil{
                     display: flex;
+                    margin-left: auto;
+
                     
                     img{
                         width: 50px;
@@ -69,7 +71,7 @@
                     }
                     
                     div{
-                        margin: 0px 0 0 46px;
+                        margin: 0px 10px 0 46px;
                         text-align: right;
                         color: #FF6060;
                     }

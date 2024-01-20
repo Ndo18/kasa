@@ -9,7 +9,7 @@ function Slideshow({ pictures }) {
     return (
       <div className="Diapo-container">
         <div  className="Diapo" key={pictures}>
-            <img src={pictures[slides]} alt="test" className="imgDiapo"/>
+            <img src={pictures[slides]} alt="Présentation logement" className="imgDiapo"/>
         </div>
 {
     totalSlides > 1 && (

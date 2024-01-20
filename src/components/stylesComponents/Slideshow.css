@@ -42,8 +42,15 @@
   .Diapo {
     height: 200px;
   }
-  .btn_diapo {
-    display: none;
+  .btn_diapo .arrow_prev {
+    width: 30px;
+    position: absolute;
+    top: 45%;
+  }
+  .btn_diapo .arrow_next {
+    width: 30px;
+    position: absolute;
+    top: 44%;
   }
   .compteur {
     display: none;

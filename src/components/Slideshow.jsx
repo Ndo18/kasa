@@ -1,5 +1,7 @@
 import { useState } from "react";
 import './stylesComponents/Slideshow.css'
+import arrowPreview from './assets/Arrow_previews.png'
+import arrowNext from './assets/Arrow_next.png'
 
 function Slideshow({ pictures }) {
 
@@ -14,8 +16,8 @@ function Slideshow({ pictures }) {
 {
     totalSlides > 1 && (
         <div className="btn_diapo">
-            <img src="/Arrow_previews.png" alt="" onClick={() => setSlides ((slides - 1 + totalSlides) % totalSlides)} className="arrow_prev"></img>
-            <img src="/Arrow_next.png" alt="" onClick={() => setSlides ((slides + 1) % totalSlides)} className="arrow_next"></img>
+            <img src={arrowPreview} alt="" onClick={() => setSlides ((slides - 1 + totalSlides) % totalSlides)} className="arrow_prev"></img>
+            <img src={arrowNext} alt="" onClick={() => setSlides ((slides + 1) % totalSlides)} className="arrow_next"></img>
         </div>
     )
 }

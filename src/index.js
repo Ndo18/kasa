@@ -14,7 +14,7 @@ import './styles/index.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename='/kasa'>
       <Header />
       <Routes>
         <Route path="/" element={<Homepage />} />
